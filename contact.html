@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8"> <!--defining the charset-->
+	<title>Form Validation | Contact </title> <!--title for webpage-->
+	<link rel = "stylesheet" type = "text/css" href = "style.css"> <!--External CSS-->
+	<link rel="stylesheet" type = "text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!--For icon over hovering effect-->
+</head>
+<!--Internal CSS for body-->
+<style>
+	body{
+		color: #fff;
+		font-family: Arial, Verdana, "Times New Roman";
+		line-height: 1.5px;
+		max-width: 100%;
+
+	}
+</style>
+<body>
+	<!--Creating class for backgroung image-->
+	<div class = "contactbgimage">
+		<nav>
+			<!--Creating class for logo for External CSS-->
+			<div class = "menu">
+				<div class = "logo">
+					<img src = "images/rt.png">
+				</div>
+				<div class = "rightmenu">
+					<ul class="main-nav"> <!--declaring unordered list of topics for navigation bar-->
+						<li> <a href = "index.html"> Home </a> </li> 
+						<li> <a href = "resume.html"> Resume </a> </li>
+						<li> <a href = "blogs.html"> Blogs </a> </li>
+						<li> <a href = "research.html"> Research </a> </li>
+						<li id="contactlist"> <a href="contact.html"> Contact </a> </li> <!--using anchor tag for contact-->					
+					</ul>				
+				</div>
+			</div>			
+		</nav>	
+		<div class = "contactTitle">
+			<h1>Please fill up the Form.</h1>
+			<p id= "date"> </p> 
+		</div>
+		<!--Inserting time, Js-->
+		<script> 
+			function display_date(){
+				document.getElementById('date').innerHTML = Date();
+				setTimeout(display_date,1000);
+			}
+			display_date();
+		</script>
+		<div class = "mainform"> <!--Creating Form-->
+			<form name="messageForm" onsubmit="validateForm()">
+				<p> <input type = "text" name = "firstname" placeholder = "First Name" class = "form-cntrl"> </p>
+				<p> <input type = "text" name = "lastname" placeholder = "Last Name" class = "form-cntrl"></p>
+				<p> <input type = "radio" name = "gender" value = "male" checked> Male <input type = "radio" name = "gender" value = "female"> Female </p>
+				<p> <br><textarea name="message" rows="10" cols="30" placeholder="Enter Any Messages" class = "mes-cntrl"></textarea></p>
+				<p> <input type="submit" value="Send" class = "send-cntrl"></p>
+			</form>
+		</div>
+			<script src = "myScript.js"> 
+			</script>
+		<div id = "socialsites"> <!--Using id and declaring list withanchor tags-->
+			<li> <a href="https://www.instagram.com/" target = "_blank"><i class = "fa fa-instagram" aria-hidden = "true"> </i> </a> </li>
+			<li> <a href="https://www.facebook.com/" target = "_blank"><i class = "fa fa-facebook" aria-hidden = "true"> </i> </a> </li>		
+			<li> <a href="https://plus.google.com/" target = "_blank"><i class = "fa fa-google-plus" aria-hidden = "true"> </i> </a> </li>		
+		</div>
+		<footer>
+			<table width="100%">
+				<tr><!--Table row-->
+					<th><!--Table header-->
+					<div style="color:red;font-family:Courier New; margin: 10%">
+						<p>&copy; Ashim Adhikari, 2019</p> <!--Inserting copyright-->
+					</div>
+					</th>
+				</tr>
+			</table>
+		</footer>		
+	</div>
+</body>
+</html>
+

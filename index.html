@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" manifest="site.manifest">
+<head>
+	<meta charset = "UTF-8"> <!--defining the charset-->
+	<title>Home | Ashim Adhikari </title> <!--title for webpage-->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"><!-- resizing for mobile-->
+	<link rel = "stylesheet" type = "text/css" href = "style.css"> <!--External CSS-->
+	<link rel="stylesheet" type = "text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!--JQuery-->
+</head>
+<!--Internal CSS for body-->
+<style>
+	body{
+		color: #fff;
+		font-family: Arial, Verdana, "Times New Roman";
+		height: 1024px;
+		width: 100%;
+		margin:0px
+		
+	}
+</style>
+<body>
+	
+	<!--Creating class for backgroung image-->
+	<div id = "bgimage">		
+		<nav>
+			<!--Creating class for logo for External CSS-->
+			<div class = "menu">
+				<div class = "logo">
+					<img src = "images/rt.png">				
+				</div>			
+				<div class = "rightmenu">
+					<ul class = "main-nav"> <!--declaring unordered list of topics for navigation bar-->
+						<li id = "indexlist"> <a href="index.html"> Home </a> </li> <!--using anchor tag for home-->
+						<li> <a href = "resume.html"> Resume </a> </li>
+						<li> <a href = "blogs.html"> Blogs </a> </li>
+						<li> <a href = "research.html"> Research </a> </li>
+						<li> <a href = "contact.html"> Contact </a> </li>
+					</ul>				
+				</div> 
+			</div>			
+		</nav>
+		<div class="container"> <!--Creating class container for CSS animantion -->
+		<div class="text1"> <!--Creating class text for External CSS-->
+			<h1 style="color:white; text-align: center; font-family: 'Great Vibes', cursive; font-size:60px; margin: 11% 10% 0% 0%;">Life is what you make it</h1> <!--Inline CSS for h1-->
+			</div>
+			<h2 class = "homedes">Ashim Adhikari</h2> <!--Creating class homedes for External CSS-->
+			<h3 class = 'homeit'> IT Student, Herald </h3> <!--Creating class homeit for External CSS-->		
+		<!--JQuery -->
+		<script> 
+	function myFunction() {
+  	document.getElementById("demo").innerHTML = "Your daily cup of coffee helps to code more. More coffee more Code. ";
+	}</script>
+
+<div id="jQ">
+	<p>Click the button to read about benefits of Coffee.</p>
+	<button onclick="myFunction()">Click me</button> <!--JQuery API-->
+	<p id="demo"></p>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+</script>
+</div>
+		<footer>			
+			<table width="100%">
+				<tr><!--Table row-->
+					<th><!--Table header-->
+					<div style="color:red;font-family:Courier New; margin: 4.5%">
+					<p>&copy; Ashim Adhikari, 2019</p> <!--Inserting copyright-->
+					</div>
+					</th>
+				</tr>
+			</table>
+		</footer>
+	</div>
+</body>
+</html>
+
